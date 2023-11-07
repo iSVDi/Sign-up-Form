@@ -2,7 +2,7 @@
   background-color: black;
   --horizontal-offset: 8vw;
   --odin-background-color: rgba(0, 0, 0, 0.4);
-  --forest-container-width: 35vw
+  --forest-container-width: 35vw;
 }
 
 .container {
@@ -10,50 +10,98 @@
   padding-right: var(--horizontal-offset);
   position: absolute;
   height: 100vh;
+  display: flex;
 }
 
-.forest-container {
+.forest_container {
   position: relative;
   width: var(--forest-container-width);
   height: 100%;
 }
 
 .forest {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .odin_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: absolute;
-    top: 23vh;
-    height: 16vh;
-    width: var(--forest-container-width);
-    background-color: var(--odin-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 23vh;
+  height: 16vh;
+  width: var(--forest-container-width);
+  background-color: var(--odin-background-color);
 }
 
-.odin_container>p {
-    font-size: 80px;
-    font-family: 'Norse Bold';
+.odin_container > p {
+  font-size: 80px;
+  font-family: "Norse Bold";
+  color: white;
 }
 
-.odin_container>img {
-    height: 100%;
+.odin_container > img {
+  height: 100%;
 }
 
 @font-face {
-    font-family: Norse Bold;
-    src: url("resoursees/norseBold.otf") format("opentype");
+  font-family: Norse Bold;
+  src: url("resoursees/norseBold.otf") format("opentype");
 }
 
 .photoBy {
-    width: 100%;
-    position: relative;
-    bottom: 80px;
-    color:white;
-    text-align: center;
-     
+  width: 100%;
+  position: relative;
+  bottom: 80px;
+  color: white;
+  text-align: center;
+}
+
+.register_container {
+  position: relative;
+  background-color: rgb(249, 250, 251);
+  color: black;
+  width: 65vw;
+  height: 100vh;
+  padding-left: 40px;
+}
+
+.online_service {
+  position: relative;
+  font-size: 30px;
+  top: 16vh;
+  padding-right: 10vw;
+}
+
+.you_know {
+  position: relative;
+  top: 50px;
+}
+
+.data_container {
+  display: subgrid;
+  position: absolute;
+  top: 40vh;
+  right: 0;
+  left: 0;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,.8);
+  
+}
+
+.second_column_data {
+  padding-left: 200px;
+}
+
+.inputs {
+  display: flex;
+}
+
+.create_account {
+  position: absolute;
+  bottom: 200px;
 }

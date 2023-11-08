@@ -32,36 +32,37 @@
           <div class="inputs">
             <div class="first_column_data">
               <div>
-                <p>First name</p>
-                <input type="text" />
+                <p class="under_input">First name</p>
+                <input class="data_input" type="text" />
               </div>
   
               <div>
-                <p>Email</p>
-                <input type="email" />
+                <p class="under_input">Email</p>
+                <input class="data_input" type="email" />
               </div>
   
-              <div>
-                <p>Password</p>
-                <input type="password" />
+              <div id="password_container">
+                <p class="under_input">Password</p>
+                <input id="password" class="data_input" type="password" />
+                <p id="errorPasswords">* Passwords do not match</p>
               </div>
   
             </div>
   
             <div class="second_column_data">
               <div>
-                <p>Last name</p>
-                <input type="text" />
+                <p class="under_input">Last name</p>
+                <input class="data_input" type="text" />
               </div>
   
               <div>
-                <p>Number</p>
-                <input type="email" />
+                <p class="under_input">Phone Number</p>
+                <input class="data_input" type="email" />
               </div>
   
               <div>
-                <p>Confirm Password</p>
-                <input type="password" />
+                <p class="under_input">Confirm Password</p>
+                <input id="confirm_password" class="data_input" type="password" />
               </div>
   
             </div>
@@ -69,12 +70,12 @@
           </div>
 
           <div class="create_account">
-            <button>Create Account</button>
-            <p>Already have an account? <span style="color: green;">Log in</span></p>
+            <button class="create_button">Create Account</button>
+            <p>Already have an account? <span class= "log_in" style="color: green;">Log in</span></p>
           </div>
-        
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
